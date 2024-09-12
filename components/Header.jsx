@@ -17,7 +17,7 @@ const Header = () => {
             window.scrollY > 50 ? setHeader(true) : setHeader(false);
         })
 
-        //remove event
+        //remove event 
 
         return ()=>window.removeEventListener('scroll', scrollYPos)
     })
