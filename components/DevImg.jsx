@@ -4,7 +4,7 @@ import React from 'react'
 const DevImg = ({ containerStyles, imgSrc }) => {
     return (
         <div className={`${containerStyles}`}>
-            <Image src={imgSrc} fill priority alt='' />
+            <Image src={imgSrc} sizes="true"   fill priority alt='' />
         </div>
     )
 }
