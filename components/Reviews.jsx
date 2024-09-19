@@ -53,7 +53,7 @@ const Reviews = () => {
                 {/* slider  */}
                 <Swiper slidesPerView={1} breakpoints={{
                     640: { slidesPerView: 2 },
-                    1400: { slidesPerView: 2 },
+                    1400: { slidesPerView: 3 },
                 }} spaceBetween={30} modules={[Pagination]} pagination={{ clickable: true }}
                 className='h-[350px]'
                 >
