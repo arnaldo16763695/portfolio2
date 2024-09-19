@@ -4,6 +4,7 @@ import { AlignJustify } from 'lucide-react';
 import Logo from '@/components/Logo';
 import Nav from '@/components/Nav';
 import Socials from '@/components//Socials';
+import { DialogTitle } from '@radix-ui/react-dialog';
 
 const MobileNav = () => {
   return (
@@ -12,6 +13,7 @@ const MobileNav = () => {
         <AlignJustify className='cursor-pointer' />
       </SheetTrigger>
       <SheetContent>
+        <DialogTitle>Menu</DialogTitle>
         <div className='flex flex-col items-center justify-between h-full py-8'>
           <div className='flex flex-col items-center gap-y-32'>
             <Logo />

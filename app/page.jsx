@@ -7,7 +7,7 @@ import Work from "@/components/Work";
 
 export default function Home() {
   return (
-    <main>
+    <main className='mx-2'>
       <Hero />
       <About />
       <Services />
