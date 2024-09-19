@@ -1,8 +1,12 @@
-import React from 'react'
+'use client'
+import {useState} from 'react';
+import ProjectCard from '@/components/ProjectCard';
+
+
 
 const ProjectPage = () => {
   return (
-    <div>ProjectPage</div>
+    <section className='min-h-screen pt-12'>ProjectPage</section>
   )
 }
 

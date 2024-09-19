@@ -1,23 +1,6 @@
-import { GanttChartSquare, Blocks, Gem } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import {servicesData} from '@/app/lib/data'
 
-const servicesData = [
-    {
-        icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-        title: 'Web Design',
-        description: 'Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus itaque dignissimos excepturi.'
-    },
-    {
-        icon: <Blocks size={72} strokeWidth={0.8} />,
-        title: 'Web Development',
-        description: 'Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus itaque dignissimos excepturi.'
-    },
-    {
-        icon: <Gem size={72} strokeWidth={0.8} />,
-        title: 'App developmt',
-        description: 'Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus itaque dignissimos excepturi.'
-    },
-]
 
 const Services = () => {
     return (
