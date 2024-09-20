@@ -11,7 +11,7 @@ import {
 export const projectData = [
   {
     image: "/work/4.png",
-    category: "reac js",
+    category: "react js",
     name: "Sitio web de Movinet",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta cum excepturi, totam magni dolorum a obcaecati architecto similique.",
@@ -20,7 +20,7 @@ export const projectData = [
   },
   {
     image: "/work/3.png",
-    category: "reac js",
+    category: "react js",
     name: "Sitio web de Colabry",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta cum excepturi, totam magni dolorum a obcaecati architecto similique.",
@@ -29,7 +29,7 @@ export const projectData = [
   },
   {
     image: "/work/2.png",
-    category: "reac js",
+    category: "react js",
     name: "Sitio web de Example",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta cum excepturi, totam magni dolorum a obcaecati architecto similique.",
@@ -38,7 +38,7 @@ export const projectData = [
   },
   {
     image: "/work/1.png",
-    category: "reac js",
+    category: "react js",
     name: "Sitio web de Exmaple 2",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta cum excepturi, totam magni dolorum a obcaecati architecto similique.",
@@ -47,8 +47,8 @@ export const projectData = [
   },
   {
     image: "/work/1.png",
-    category: "reac jfullstack",
-    name: "Sitio web de Exmaple 2",
+    category: "react fullstack",
+    name: "Sitio web ejemplo",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta cum excepturi, totam magni dolorum a obcaecati architecto similique.",
     link: "",
