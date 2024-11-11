@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Desarrollador Web</div>
             <h1 className="h1 mb-4">Hola, soy Arnaldo Espinoza</h1>
-            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">Breve descripcion mia, soy un apasionado por la tecnologia de la información</p>
+            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">Soy un apasionado por la tecnología de la información. Me gusta aprender y enseñar.</p>
 
             {/* button  */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12 ">

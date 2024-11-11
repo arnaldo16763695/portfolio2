@@ -59,22 +59,22 @@ export const projectData = [
 export const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Web Design",
+    title: "Diseño Web",
     description:
-      "Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus itaque dignissimos excepturi.",
+      "Diseñador Web con experiencia en HTML, CSS, JavaScript y herramientas de diseño como Figma. Especializado en la creación de sitios responsivos y optimizados, con prácticas de SEO y accesibilidad para mejorar la experiencia del usuario.",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: "Web Development",
+    title: "Desarrollo Web ",
     description:
-      "Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus itaque dignissimos excepturi.",
+      "Desarrollador web con habilidad para crear soluciones innovadoras y eficientes en proyectos de diversos sectores. Experiencia en desarrollo de interfaces interactivas, integraciones de APIs y optimización de rendimiento.",
   },
-  {
-    icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "App developmt",
-    description:
-      "Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus itaque dignissimos excepturi.",
-  },
+  // {
+  //   icon: <Gem size={72} strokeWidth={0.8} />,
+  //   title: "App developmt",
+  //   description:
+  //     "Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus itaque dignissimos excepturi.",
+  // },
 ];
 
 export const infoData = [
@@ -88,12 +88,12 @@ export const infoData = [
   },
   {
     icon: <MailIcon size={20} />,
-    text: "arnaldoespinoza1@hotmaial.com",
+    text: "arnaldoespinoza1@hotmail.com",
   },
-  {
-    icon: <Calendar size={20} />,
-    text: "Nacido el 12 de abril de 1983",
-  },
+  // {
+  //   icon: <Calendar size={20} />,
+  //   text: "Nacido el 12 de abril de 1983",
+  // },
   {
     icon: <GraduationCap size={20} />,
     text: "Ingeniero de Sistema",
@@ -106,7 +106,7 @@ export const infoData = [
 
 export const qualificationData = [
   {
-    title: "education",
+    title: "educación",
     data: [
       {
         univerity: "Carlos Soublette",
@@ -121,10 +121,10 @@ export const qualificationData = [
     ],
   },
   {
-    title: "experience",
+    title: "experiencia",
     data: [
       {
-        company: "Makro",
+        company: "Makro Comercializadora sa",
         role: "Operador Soporte Técnico",
         year: "2005-2016",
       },
@@ -132,6 +132,11 @@ export const qualificationData = [
         company: "Emprevet",
         role: "instructor CCNA",
         year: "2014-2016",
+      },
+      {
+        company: "VIT (Venezolana de Industrias Tecnológicas)",
+        role: "Jefe de Redes",
+        year: "2018-2024",
       },
     ],
   },
@@ -152,6 +157,12 @@ export const skillData = [
       },
       {
         name: "Desarrollo Back-end ",
+      },
+      {
+        name: "Linux ",
+      },
+      {
+        name: "Docker ",
       },
     ],
   },

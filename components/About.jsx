@@ -10,7 +10,7 @@ const About = () => {
     const getData = (arr, title) => {
         return arr.find((item) => item.title === title);
     }
-    console.log(getData(qualificationData, 'education'))
+    // console.log(getData(qualificationData, 'education'))
     return (
         <section className='xl:h-[860px] pb-12 xl:py-24'>
             <div className='container mx-auto'>
@@ -25,8 +25,8 @@ const About = () => {
                         <Tabs defaultValue='personal'>
                             <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none'>
                                 <TabsTrigger className='w-[190px] xl:w-auto' value='personal'>Información</TabsTrigger>
-                                <TabsTrigger className='w-[190px] xl:w-auto' value='qualifications'>Qualifications</TabsTrigger>
-                                <TabsTrigger className='w-[190px] xl:w-auto' value='skills'>Skills</TabsTrigger>
+                                <TabsTrigger className='w-[190px] xl:w-auto' value='qualifications'>Calificación</TabsTrigger>
+                                <TabsTrigger className='w-[190px] xl:w-auto' value='skills'>Habilidades</TabsTrigger>
                             </TabsList>
                             {/* tabs content */}
                             <div className='text-lg mt-12 xl:mt-8'>
@@ -34,8 +34,8 @@ const About = () => {
 
                                 <TabsContent value='personal'>
                                     <div className='pl-4 text-center xl:text-left'>
-                                        <h3 className='h3 mb-4'>Unmatched Service Quality for over 10 Years</h3>
-                                        <p className='subtitle max-w-xl mx-auto xl:mx-0'>Me especializo en crear sitios web intuitivos con tecnología de punta, brindando experiencias de usuario dinámicas y atractivas </p>
+                                        <h3 className='h3 mb-4'>Calidad de servicio inigualable </h3>
+                                        <p className='subtitle max-w-xl mx-auto xl:mx-0'>Me especializo en crear aplicaciones y sitios web intuitivos con tecnología de punta, brindando experiencias de usuario dinámicas y atractivas </p>
                                         {/* icons */}
                                         <div className='grid xl:grid-cols-2 gap-4 mb-12'>
                                             {infoData.map((item, index) => (
@@ -47,9 +47,9 @@ const About = () => {
                                         </div>
                                         {/* languages */}
                                         <div className='flex flex-col gap-y-2'>
-                                            <div className="text-primary">language skill</div>
+                                            <div className="text-primary">Idiomas</div>
                                             <div className="border-b border-border"></div>
-                                            <div>Spañol, Inglés</div>
+                                            <div>Español nativo, Inglés intermedio</div>
                                         </div>
                                     </div>
                                 </TabsContent>
@@ -57,19 +57,19 @@ const About = () => {
                                 {/* qualifications */}
                                 <TabsContent value='qualifications'>
                                     <div>
-                                        <h3 className='h3 mb-8 text-center xl:text-left'>My awesome journey</h3>
+                                        <h3 className='h3 mb-8 text-center xl:text-left'>Mi trayectoria</h3>
                                         <div className='grid md:grid-cols-2 gap-y-8'>
                                             {/* experience  */}
                                             <div className='flex flex-col gap-y-6'>
                                                 <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                                                     <Briefcase />
                                                     <h4 className='capitalize font-medium'>
-                                                        {getData(qualificationData, 'experience').title}
+                                                        {getData(qualificationData, 'experiencia').title}
                                                     </h4>
                                                 </div>
                                                 {/* list  */}
                                                 <div className='flex flex-col gap-y-8'>
-                                                    {getData(qualificationData, 'experience').data.map((item, index) => {
+                                                    {getData(qualificationData, 'experiencia').data.map((item, index) => {
                                                         const { company, role, year } = item;
                                                         return (
                                                             <div className='flex gap-x-8 group ' key={index}>
@@ -93,12 +93,12 @@ const About = () => {
                                                 <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                                                     <GraduationCap />
                                                     <h4 className='capitalize font-medium'>
-                                                        {getData(qualificationData, 'education').title}
+                                                        {getData(qualificationData, 'educación').title}
                                                     </h4>
                                                 </div>
                                                 {/* list  */}
                                                 <div className='flex flex-col gap-y-8'>
-                                                    {getData(qualificationData, 'education').data.map((item, index) => {
+                                                    {getData(qualificationData, 'educación').data.map((item, index) => {
                                                         const { univerity, qualification, year } = item;
                                                         return (
                                                             <div className='flex gap-x-8 group ' key={index}>
