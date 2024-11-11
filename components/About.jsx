@@ -2,7 +2,7 @@ import DevImg from '@/components/DevImg';
 import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { GraduationCap, Briefcase } from 'lucide-react';
-import {qualificationData, infoData, skillData} from '@/app/lib/data';
+import {qualificationData, infoData, skillData} from '@/src/app/lib/data';
 
 
 

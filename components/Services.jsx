@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import {servicesData} from '@/app/lib/data'
+import {servicesData} from '@/src/app/lib/data'
 
 
 const Services = () => {
