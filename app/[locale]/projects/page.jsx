@@ -2,7 +2,7 @@
 import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { projectData } from "@/src/app/lib/data";
+import { projectData } from "@/app/lib/data";
 import { TabsContent } from "@radix-ui/react-tabs";
 
 const uniqueCategories = [

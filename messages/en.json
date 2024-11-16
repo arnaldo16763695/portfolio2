@@ -2,5 +2,71 @@
   "HomePage": {
     "title": "Hello world! este se carga",
     "about": "Go to the about page"
-  }
+  },
+  "NavLinks": {
+    "title1": "home",
+    "title2": "my projects",
+    "title3": "contact"
+  },
+  "Hero": {
+    "web-developer": "Web developer",
+    "hello": "Hello, I'm",
+    "brief-description": "I am passionate about information technology. I like to learn and teach.",
+    "contact-me": "Contact me",
+    "download-cv": "Download  CV",
+    "experience": "Years of experience",
+    "projects-finished": "Projects finished",
+    "customers": "Customers"
+  },
+  "About": {
+    "about": "About Me",
+    "information": "Information",
+    "qualifications": "Qualifications",
+    "skills": "Skills",
+    "information-title": "Unmatched Service Quality",
+    "information-description": "I specialize in creating intuitive applications and websites with cutting-edge technology, providing dynamic and engaging user experiences.",
+    "languages-title": "Languages",
+    "languages": "Native Spanish, Intermediate English",
+    "my-path": "My Journey",
+    "what-I-use": "What I use every day",
+    "tools": "Tools"
+  },
+  "Services": {
+    "web-design": "Web Design",
+    "web-design-description": "Web designer with experience in HTML, CSS, JavaScript, and design tools like Figma. Specialized in creating responsive and optimized websites with SEO and accessibility practices to enhance the user experience.",
+    "web-development": "Web Development",
+    "web-development-description": "Web developer skilled in creating innovative and efficient solutions for projects across various sectors. Experienced in developing interactive interfaces, API integrations, and performance optimization.",
+    "app-development": "App Development",
+    "app-development-description": "Mobile app developer with experience in creating innovative, user-focused solutions for iOS and Android platforms."
+  },
+  "Works": {
+    "work-description1": "This is the description of project 1. This project consists of a website.",
+    "work-description2": "This is the description of project 2. This project consists of a website.",
+    "work-description3": "This is the description of project 3. This project consists of a website.",
+    "work-description4": "This is the description of project 4. This project consists of a website.",
+    "work-description5": "This is the description of project 5. This project consists of a website.",
+    "work-description6": "This is the description of project 6. This project consists of a website.",
+    "work-description7": "This is the description of project 7. This project consists of a website.",
+    "last-projects": "Recent Work",
+    "last-projects-description": "Here are the most recent projects I am working on."
+},
+"Reviews": {
+    "reviews-title": "Reviews"
+},
+"Cta": {
+    "cta-description": "Ready to turn your ideas into reality? I'm here to help you.",
+    "contact": "Contact Me"
+},
+"Contact": {
+    "say-hello": "Hello!",
+    "lest-work": "Let's work together",
+    "contact-description": "Feel free to reach out, and you'll receive a friendly response."
+},
+"Form-contact": {
+    "name": "Your Name",
+    "email": "Your Email",
+    "send-your-email": "Enter your email",
+    "send": "Send"
+}
+
 }
