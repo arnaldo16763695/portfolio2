@@ -47,26 +47,27 @@
     "work-description5": "This is the description of project 5. This project consists of a website.",
     "work-description6": "This is the description of project 6. This project consists of a website.",
     "work-description7": "This is the description of project 7. This project consists of a website.",
+    "my-project-title": "My projects",
+    "all-projects": "All projects",
     "last-projects": "Recent Work",
     "last-projects-description": "Here are the most recent projects I am working on."
-},
-"Reviews": {
+  },
+  "Reviews": {
     "reviews-title": "Reviews"
-},
-"Cta": {
+  },
+  "Cta": {
     "cta-description": "Ready to turn your ideas into reality? I'm here to help you.",
     "contact": "Contact Me"
-},
-"Contact": {
+  },
+  "Contact": {
     "say-hello": "Hello!",
     "lest-work": "Let's work together",
     "contact-description": "Feel free to reach out, and you'll receive a friendly response."
-},
-"Form-contact": {
+  },
+  "Form-contact": {
     "name": "Your Name",
     "email": "Your Email",
     "send-your-email": "Enter your email",
     "send": "Send"
-}
-
+  }
 }

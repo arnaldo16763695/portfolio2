@@ -47,7 +47,9 @@
     "work-description5": "Ceci est la description du projet 5. Ce projet consiste en un site web.",
     "work-description6": "Ceci est la description du projet 6. Ce projet consiste en un site web.",
     "work-description7": "Ceci est la description du projet 7. Ce projet consiste en un site web.",
-    "last-projects": "Projets récents",
+    "my-project-title": "Mes projets",
+    "all-projects": "Tous les projets",
+    "last-projects": "Projets récents", 
     "last-projects-description": "Voici les projets les plus récents sur lesquels je travaille."
   },
   "Reviews": {

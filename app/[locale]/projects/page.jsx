@@ -2,15 +2,61 @@
 import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { projectData } from "@/app/lib/data";
+// import { projectData } from "@/app/lib/data";
 import { TabsContent } from "@radix-ui/react-tabs";
+import { useTranslations } from "next-intl";
 
-const uniqueCategories = [
-  "all projects",
-  ...new Set(projectData.map((item) => item.category)),
-];
+
+
 
 const ProjectPage = () => {
+  const t = useTranslations('Works')
+  const projectData = [
+    {
+      image: "/work/4.png",
+      category: "react js",
+      name: "Sitio web de Movinet",
+      description: t('work-description1'),
+      link: "",
+      github: "",
+    },
+    {
+      image: "/work/3.png",
+      category: "react js",
+      name: "Sitio web de Colabry",
+      description:  t('work-description2'),
+      link: "",
+      github: "",
+    },
+    {
+      image: "/work/2.png",
+      category: "react js",
+      name: "Sitio web de Example",
+      description: t('work-description3'),        
+      link: "",
+      github: "",
+    },
+    {
+      image: "/work/1.png",
+      category: "react js",
+      name: "Sitio web de Exmaple 2",
+      description: t('work-description4'),       
+      link: "",
+      github: "",
+    },
+    {
+      image: "/work/1.png",
+      category: "react fullstack",
+      name: "Sitio web ejemplo",
+      description: t('work-description5'),       
+      link: "",
+      github: "",
+    },
+  ];
+  const uniqueCategories = [
+    "all projects",
+    ...new Set(projectData.map((item) => item.category)),
+  ];
   const [categories, setCategories] = useState(uniqueCategories);
   const [category, setCategory] = useState("all projects");
 
