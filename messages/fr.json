@@ -32,6 +32,7 @@
     "tools": "Outils"
   },
   "Services": {
+    "service-title": "Mes services",
     "web-design": "Conception Web",
     "web-design-description": "Concepteur web avec de l'expérience en HTML, CSS, JavaScript et des outils de conception comme Figma. Spécialisé dans la création de sites responsifs et optimisés, avec des pratiques de SEO et d'accessibilité pour améliorer l'expérience utilisateur.",
     "web-development": "Développement Web",

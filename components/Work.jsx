@@ -1,6 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import { Button } from "@/components/ui/button";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -62,11 +62,11 @@ const Work = () => {
             {t('last-projects-description')}
           </p>
           <Link href="/projects">
-            <Button>Todos los proyectos</Button>
-          </Link>
+            <Button>{t('all-projects')}</Button>
+          </Link> 
         </div>
         {/* slider  */}
-        <div className="xl:max-w-[1000px] xl:absolute pl-10 right-0 top-0 ">
+        <div className="xl:max-w-[1000px] xl:absolute pl-2 right-0 top-0 ">
           <Swiper
             className="h-[480px]"
             slidesPerView={1}

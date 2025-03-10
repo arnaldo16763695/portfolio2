@@ -32,6 +32,7 @@
     "tools": "Herramientas"
   },
   "Services": {
+    "service-title": "Mis servicios",
     "web-design": "Diseño Web",
     "web-design-description": "Diseñador Web con experiencia en HTML, CSS, JavaScript y herramientas de diseño como Figma. Especializado en la creación de sitios responsivos y optimizados, con prácticas de SEO y accesibilidad para mejorar la experiencia del usuario.",
     "web-development": "Desarrollo WEB",
