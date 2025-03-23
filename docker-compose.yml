@@ -29,7 +29,6 @@ services:
       - certs:/etc/nginx/certs  # Volumen para almacenar los certificados SSL
       - vhost:/etc/nginx/vhost.d  # Volumen para configuraciones de host virtual
       - html:/usr/share/nginx/html  # Volumen para el contenido estático
-      - /var/run/docker.sock:/var/run/docker.sock:ro
     depends_on:
       - app
     networks:
@@ -44,6 +43,7 @@ services:
       - certs:/etc/nginx/certs  # Volumen compartido para los certificados SSL
       - vhost:/etc/nginx/vhost.d  # Volumen compartido para configuraciones de host virtual
       - html:/usr/share/nginx/html  # Volumen compartido para el contenido estático
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       - NGINX_PROXY_CONTAINER=nginx-proxy  # Nombre del contenedor de Nginx
     depends_on:
