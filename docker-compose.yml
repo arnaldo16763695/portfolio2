@@ -29,6 +29,7 @@ services:
       - certs:/etc/nginx/certs  # Volumen para almacenar los certificados SSL
       - vhost:/etc/nginx/vhost.d  # Volumen para configuraciones de host virtual
       - html:/usr/share/nginx/html  # Volumen para el contenido estático
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     depends_on:
       - app
     networks:
@@ -48,7 +49,7 @@ services:
     depends_on:
       - nginx
     networks:
-      - app-network
+      - app-network 
 
 # Red para conectar los servicios
 networks:
