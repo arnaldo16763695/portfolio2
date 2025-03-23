@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+
 
 
 const Cta = () => {
@@ -13,6 +14,7 @@ const Cta = () => {
                        {t('cta-description')}
                     </h2>
                     <Link href='/contact'><Button>{t('contact')}</Button></Link>
+                    
                 </div>
             </div>
         </section>

@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  # Servicio para tu aplicación Next.js
+  app:
+    build:
+      context: .  # Usa el directorio actual como contexto de construcción
+      dockerfile: Dockerfile  # Especifica el Dockerfile a usar
+    container_name: nextjs-app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - VIRTUAL_HOST=portafolio.ajedev.com  # Especifica el dominio para el que se generará el certificado
+      - LETSENCRYPT_HOST=portafolio.ajedev.com  # Especifica el dominio para Let's Encrypt
+      - LETSENCRYPT_EMAIL=arnaldoespinoza1@hotmail.com  # Especifica tu correo electrónico para Let's Encrypt
+    networks:
+      - app-network
+
+  # Servicio para Nginx como proxy inverso
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - "8022:80"  # Expone el puerto 80 para HTTP
+      - "8023:443"  # Expone el puerto 443 para HTTPS
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf  # Configuración personalizada de Nginx
+      - certs:/etc/nginx/certs  # Volumen para almacenar los certificados SSL
+      - vhost:/etc/nginx/vhost.d  # Volumen para configuraciones de host virtual
+      - html:/usr/share/nginx/html  # Volumen para el contenido estático
+    depends_on:
+      - app
+    networks:
+      - app-network
+
+  # Servicio para Let's Encrypt Companion
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: letsencrypt-companion
+    restart: unless-stopped
+    volumes:
+      - certs:/etc/nginx/certs  # Volumen compartido para los certificados SSL
+      - vhost:/etc/nginx/vhost.d  # Volumen compartido para configuraciones de host virtual
+      - html:/usr/share/nginx/html  # Volumen compartido para el contenido estático
+    environment:
+      - NGINX_PROXY_CONTAINER=nginx-proxy  # Nombre del contenedor de Nginx
+    depends_on:
+      - nginx
+    networks:
+      - app-network
+
+# Red para conectar los servicios
+networks:
+  app-network:
+    driver: bridge
+
+# Volúmenes para almacenar certificados y configuraciones
+volumes:
+  certs:
+  vhost:
+  html:
