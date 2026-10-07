@@ -58,9 +58,9 @@ public/                     # imágenes: hero/, about/, work/, reviews/, contact
 
 ## Despliegue
 
-- `next.config.mjs` usa `output: "standalone"`; el `Dockerfile` (multi-stage, node:18-alpine) ejecuta `node server.js` en el puerto 3000.
-- `docker-compose.yml`: `app` (Next.js) + `nginx` (proxy, puertos host 8022→80 y 8023→443) + `letsencrypt` companion. Dominio configurado: `portafolio.ajedev.com`.
-- `nginx/nginx.conf` solo escucha en 80 (aún no hay bloque 443/SSL).
+- **Este proyecto se despliega en Vercel** (repo GitHub `arnaldo16763695/portfolio2`), hoy en https://portfolio2-sigma-eosin.vercel.app. Push a `main` → producción en Vercel; push a otra rama → deployment de preview.
+- **ajedev.com todavía NO apunta a Vercel**: el registro A apunta a `190.205.42.241` (servidor propio con nginx/1.25.1), que sirve el portafolio antiguo en HTML estático. Para el relanzamiento hay que añadir `ajedev.com` y `www.ajedev.com` como dominios del proyecto en Vercel y cambiar **solo** los registros DNS de `@` y `www`. No tocar los de los subdominios (`food`, `global`, etc.).
+- `Dockerfile`, `docker-compose.yml` y `nginx/` son un intento de autohospedaje que **no se usa** (`portafolio.ajedev.com` no responde). `output: "standalone"` en `next.config.mjs` existe por ese Dockerfile; Vercel lo ignora.
 - `.env` existe pero está vacío y está ignorado por git.
 
 ## Contenido de referencia (producción, ajedev.com)
@@ -127,6 +127,6 @@ Confirmado por el usuario (2026-10-07): ofrece todos los servicios listados "y m
 2. **Reseñas**: `Reviews` está oculto en la home porque solo tiene lorem ipsum; volver a añadirlo cuando haya testimonios reales (no inventarlos).
 3. **Capturas**: las imágenes de `public/work/projects/` son las de producción (400×400). Conviene reemplazarlas por capturas más grandes. Las antiguas `public/work/1-4.png` ya no se usan.
 4. **GitHub**: ningún proyecto tiene `github` en `projectsData`; añadir los repos públicos que existan.
-5. **Despliegue**: el dominio de `docker-compose.yml` es `portafolio.ajedev.com`; cambiarlo a `ajedev.com` (y `www`) cuando sustituya a producción, y añadir el bloque HTTPS en `nginx/nginx.conf`. `metadataBase` en `layout.jsx` ya apunta a `https://ajedev.com`.
+5. **Despliegue**: apuntar ajedev.com a Vercel (ver sección Despliegue). Decidir si se eliminan `Dockerfile`, `docker-compose.yml` y `nginx/`. `metadataBase` en `layout.jsx` ya apunta a `https://ajedev.com`. Al publicar, revisar que los enlaces de proyectos funcionen: el 2026-10-07 `food.ajedev.com` respondía 500 y `global.ajedev.com` fallaba en SSL.
 6. Añadir `sitemap.js` y `robots.js` en `app/` para el SEO (incluir las URLs traducidas de `pathnames`, p. ej. `/es/redes`).
 7. Reemplazar el `README.md` genérico de create-next-app.
