@@ -69,6 +69,7 @@ Fuente de verdad del contenido (sitio en producción + `public/Curriculum-Arnald
 
 **Perfil**
 - Nombre: Arnaldo Espinoza — Programador Web / Desarrollador Full Stack
+- Firma personal (razón social): **ARNALDO JESUS ESPINOZA, F.P** (sin punto final; `contactData.legalName`) · RIF: V167636957 (`contactData.rif`). Aparece en el pie de página de todas las páginas porque ajedev.com es la web del negocio declarada ante Meta (proveedor de la API de WhatsApp/Meta). No cambiar su escritura sin confirmar con el registro.
 - Ubicación: Punto Fijo, Edo. Falcón, Venezuela
 - Teléfono: +58 0414 4786040 · Email: arnaldoespinoza1@hotmail.com
 - Formación (según CV): Ingeniero de Sistemas, I.U.P. Santiago Mariño (2012–2016); TSU en Sistemas de Información, I.U. Carlos Soublette (2005–2008)

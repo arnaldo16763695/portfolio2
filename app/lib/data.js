@@ -6,6 +6,10 @@ export const WEB_DEV_START_YEAR = 2022;
 
 export const contactData = {
   name: "Arnaldo Espinoza",
+  // razón social de la firma personal: debe coincidir exactamente con el registro
+  // (Meta la compara con los documentos en la verificación del negocio)
+  legalName: "ARNALDO JESUS ESPINOZA, F.P",
+  rif: "V167636957",
   email: "arnaldoespinoza1@hotmail.com",
   phone: "+58 414 4786040",
   phoneHref: "tel:+584144786040",
