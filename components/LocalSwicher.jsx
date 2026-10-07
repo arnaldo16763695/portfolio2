@@ -1,39 +1,31 @@
 'use client'
-
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
 import { useTransition } from "react";
+import { usePathname, useRouter } from "@/i18n/routing";
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-  } from "@/components/ui/select"
-  
+} from "@/components/ui/select"
 
 const LocalSwicher = () => {
-
     const [isPending, startTransition] = useTransition();
     const router = useRouter();
+    const pathname = usePathname();
     const localActive = useLocale();
-    const onSelectChange = (e) => {
-        // console.log(e)
-        const nextLocale = e;
+
+    // cambia el idioma manteniendo la página actual
+    const onSelectChange = (nextLocale) => {
         startTransition(() => {
-            router.replace(`/${nextLocale}`);
+            router.replace(pathname, { locale: nextLocale });
         })
     }
+
     return (
-
-        // <select defaultValue={localActive} className="rounded w-12" name="" id="" onChange={onSelectChange}>
-        //     <option value="en">En</option>
-        //     <option value="es">Es</option>
-        //     <option value="fr">Fr</option>
-        // </select>
-
-        <Select defaultValue={localActive} onValueChange={onSelectChange}>
-            <SelectTrigger className="w-[60px]">
+        <Select defaultValue={localActive} onValueChange={onSelectChange} disabled={isPending}>
+            <SelectTrigger className="w-[60px]" aria-label="Language">
                 <SelectValue placeholder={localActive} />
             </SelectTrigger>
             <SelectContent>
@@ -42,7 +34,6 @@ const LocalSwicher = () => {
                 <SelectItem value="fr">Fr</SelectItem>
             </SelectContent>
         </Select>
-
     )
 }
 

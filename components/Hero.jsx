@@ -12,6 +12,7 @@ import Badge from '@/components/Badge';
 import Socials from '@/components/Socials';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import { projectsData, clientsCount, WEB_DEV_START_YEAR } from '@/app/lib/data';
 
 const Hero = () => {
   const t = useTranslations('Hero');
@@ -28,7 +29,7 @@ const Hero = () => {
             {/* button  */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12 ">
               <Link href='/contact'><Button className="gap-x-2 " >{t('contact-me')}<Send size={18} /></Button></Link>
-              <Button className="gap-x-2" variant='secondary' >{t('download-cv')}<Download size={18} /></Button>
+              <a href='/Curriculum-Arnaldo.pdf' download><Button className="gap-x-2" variant='secondary' >{t('download-cv')}<Download size={18} /></Button></a>
             </div>
 
             {/* socials media */}
@@ -38,13 +39,13 @@ const Hero = () => {
           <div className="hidden xl:flex relative">
 
             {/* badge 1 */}
-            <Badge icon={<RiBriefcase4Fill />} endCountNum={3} badgeText={t('experience')} containerStyles='absolute top-[24%] -left-[5rem]' />
+            <Badge icon={<RiBriefcase4Fill />} endCountNum={new Date().getFullYear() - WEB_DEV_START_YEAR} badgeText={t('experience')} containerStyles='absolute top-[24%] -left-[5rem]' />
 
             {/* badge 2*/}
-            <Badge icon={<RiTodoFill />} endCountNum={6} endCountText={''} badgeText={t('projects-finished')} containerStyles='absolute top-[80%] -left-[1rem]' />
+            <Badge icon={<RiTodoFill />} endCountNum={projectsData.length} endCountText={''} badgeText={t('projects-finished')} containerStyles='absolute top-[80%] -left-[1rem]' />
 
             {/* badge 3*/}
-            <Badge icon={<RiTeamFill />} endCountNum={6} endCountText={''} badgeText={t('customers')} containerStyles='absolute top-[55%] -right-8' />
+            <Badge icon={<RiTeamFill />} endCountNum={clientsCount} endCountText={''} badgeText={t('customers')} containerStyles='absolute top-[55%] -right-8' />
 
 
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark

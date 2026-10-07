@@ -1,6 +1,8 @@
 import Form from "@/components/Form";
-import { MailIcon, HomeIcon, PhoneCall, PhoneIcon } from "lucide-react";
+import { MailIcon, HomeIcon, PhoneIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { RiWhatsappFill } from "react-icons/ri";
+import { contactData, whatsappLink } from "@/app/lib/data";
 
 const ContactPage = () => {
   const t = useTranslations('Contact')
@@ -31,19 +33,22 @@ const ContactPage = () => {
 
           <div className="flex flex-col gap-y-4 xl:gap-y-14 mb-12 xl:mb-24 text-base xl:text-lg">
             {/* mail  */}
-
-            <div className="flex items-center gap-x-8">
+            <a href={`mailto:${contactData.email}`} className="flex items-center gap-x-8 hover:text-primary transition-all">
               <MailIcon size={18} className="text-primary" />
-              <div>arnaldoespinoza1@hotmail.com</div>
-            </div>
+              <div>{contactData.email}</div>
+            </a>
             <div className="flex items-center gap-x-8">
               <HomeIcon size={18} className="text-primary" />
-              <div>Punto Fijo, Falcón, Venezuela.</div>
+              <div>{contactData.location}</div>
             </div>
-            <div className="flex items-center gap-x-8">
+            <a href={contactData.phoneHref} className="flex items-center gap-x-8 hover:text-primary transition-all">
               <PhoneIcon size={18} className="text-primary" />
-              <div>+58 4144786040</div>
-            </div>
+              <div>{contactData.phone}</div>
+            </a>
+            <a href={whatsappLink(t('whatsapp-message'))} target="_blank" rel="noopener noreferrer" className="flex items-center gap-x-8 hover:text-primary transition-all">
+              <RiWhatsappFill size={18} className="text-primary" />
+              <div>{t('whatsapp')}</div>
+            </a>
           </div>
           <div>
             <Form />

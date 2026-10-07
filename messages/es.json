@@ -1,74 +1,229 @@
 {
-  "HomePage": {
-    "title": "Hello world! Español",
-    "about": "Go to the about page"
+  "Metadata": {
+    "title": "Arnaldo Espinoza · Desarrollador Web Full Stack",
+    "description": "Portafolio de Arnaldo Espinoza (ajedev): desarrollo web full stack con Next.js, Nest.js y PostgreSQL, diseño web, SEO y servicios de redes e infraestructura."
   },
   "NavLinks": {
     "title1": "inicio",
     "title2": "mis proyectos",
-    "title3": "contacto"
+    "title3": "contacto",
+    "title4": "redes"
   },
   "Hero": {
-    "web-developer": "Desarrollador web",
+    "web-developer": "Desarrollador web full stack",
     "hello": "Hola, soy",
-    "brief-description": "Soy apasionado de la tecnología de la información. Me gusta aprender y enseñar.",
+    "brief-description": "Construyo sitios y aplicaciones web con Next.js, Nest.js y PostgreSQL, respaldado por más de 20 años de experiencia en soporte técnico, redes y servidores.",
     "contact-me": "Contáctame",
     "download-cv": "Descargar CV",
-    "experience": "Años de experiencia",
-    "projects-finished": "Proyectos terminados",
+    "experience": "Años en desarrollo web",
+    "projects-finished": "Proyectos publicados",
     "customers": "Clientes"
   },
   "About": {
     "about": "Acerca de mí",
     "information": "Información",
-    "qualifications": "Calificación",
+    "qualifications": "Trayectoria",
     "skills": "Habilidades",
-    "information-title": "Calidad de servicio inigualable",
-    "information-description": "Me especializo en crear aplicaciones y sitios web intuitivos con tecnología de punta, brindando experiencias de usuario dinámicas y atractivas",
+    "information-title": "De las redes y servidores al desarrollo full stack",
+    "information-description": "Empecé en soporte técnico y administración de redes y servidores, configurando servidores Linux, routers y switches. Hoy me enfoco en el desarrollo web full stack: React y Next.js con TypeScript y Tailwind CSS en el frontend; Node.js, Nest.js, MySQL y PostgreSQL en el backend. Me apasiona la tecnología, disfruto trabajar en equipo y siempre estoy aprendiendo.",
     "languages-title": "Idiomas",
-    "languages": "Español nativo, Inglés intermedio",
+    "languages": "Español nativo, inglés intermedio",
     "my-path": "Mi trayectoria",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "present": "actualidad",
     "what-I-use": "Lo que uso todos los días",
-    "tools": "Herramientas"
+    "tools": "Herramientas",
+    "skill-groups": {
+      "frontend": "Frontend",
+      "backend": "Backend y bases de datos",
+      "infra": "DevOps y redes"
+    },
+    "roles": {
+      "fullstack-dev": "Desarrollador web full stack",
+      "network-head": "Jefe de Redes",
+      "ccna-instructor": "Instructor Cisco CCNA",
+      "alc-assistant": "Asistente de Administración, Logística y Control"
+    },
+    "degrees": {
+      "systems-engineer": "Ingeniero de Sistemas",
+      "tsu-information-systems": "TSU en Sistemas de Información"
+    }
   },
   "Services": {
     "service-title": "Mis servicios",
-    "web-design": "Diseño Web",
-    "web-design-description": "Diseñador Web con experiencia en HTML, CSS, JavaScript y herramientas de diseño como Figma. Especializado en la creación de sitios responsivos y optimizados, con prácticas de SEO y accesibilidad para mejorar la experiencia del usuario.",
-    "web-development": "Desarrollo WEB",
-    "web-development-description": "Desarrollador web con habilidad para crear soluciones innovadoras y eficientes en proyectos de diversos sectores. Experiencia en desarrollo de interfaces interactivas, integraciones de APIs y optimización de rendimiento.",
-    "app-development": "Dessarollo de App",
-    "app-development-description": "Desarrollador de aplicaciones móviles con experiencia en la creación de soluciones innovadoras y centradas en el usuario para plataformas iOS y Android."
+    "web-development": "Desarrollo web",
+    "web-development-description": "Aplicaciones y sitios a medida, frontend y backend: paneles administrativos, integraciones con APIs, bases de datos y despliegue en tu propio servidor o en la nube.",
+    "web-design": "Diseño web",
+    "web-design-description": "Sitios responsivos, accesibles y rápidos, diseñados a partir de tu marca y pensados para convertir visitas en clientes.",
+    "seo": "SEO",
+    "seo-description": "Optimización para buscadores: estructura, metadatos, rendimiento y contenido para mejorar tu posicionamiento orgánico en Google.",
+    "networks": "Redes e infraestructura",
+    "networks-description": "Diseño, instalación y configuración de redes LAN/Wi-Fi, routers, switches y servidores Linux para hogares y empresas, con experiencia como Jefe de Redes e instructor CCNA.",
+    "networks-more": "Ver servicios de redes"
   },
   "Works": {
-    "work-description1": "Esta es la descripción del proyecto 1, Este proyecto consiste en uns pagina web.",
-    "work-description2": "Esta es la descripción del proyecto 2, Este proyecto consiste en uns pagina web.",
-    "work-description3": "Esta es la descripción del proyecto 3, Este proyecto consiste en uns pagina web.",
-    "work-description4": "Esta es la descripción del proyecto 4, Este proyecto consiste en uns pagina web.",
-    "work-description5": "Esta es la descripción del proyecto 5, Este proyecto consiste en uns pagina web.",
-    "work-description6": "Esta es la descripción del proyecto 6, Este proyecto consiste en uns pagina web.",
-    "work-description7": "Esta es la descripción del proyecto 7, Este proyecto consiste en uns pagina web.",
-    "my-project-title": "Mis proyectos",
     "all-projects": "Todos los proyectos",
     "last-projects": "Trabajos recientes",
-    "last-projects-description": "A continuación te muestro los mas recientes proyectos en los que estoy trabajando"
+    "last-projects-description": "Estos son algunos de los proyectos más recientes que he desarrollado para clientes y por cuenta propia."
+  },
+  "Projects": {
+    "title": "Mis proyectos",
+    "visit-site": "Visitar el sitio",
+    "categories": {
+      "all": "Todos",
+      "web-apps": "Aplicaciones web",
+      "web-sites": "Sitios web"
+    },
+    "items": {
+      "food": "Plataforma e-commerce de comida con tienda pública, carrito, checkout, panel administrativo y flujo de cocina en tiempo real.",
+      "globalsi-app": "Aplicación para Globalsi (Chile) que controla los trabajos de soporte e instalación realizados en campo.",
+      "vencol": "Sitio web corporativo para Vencol Technology, empresa de soporte técnico, conectividad y seguridad en Colombia.",
+      "portfolio": "Plantilla de portafolio para desarrolladores web, multilenguaje y con modo oscuro.",
+      "aje-pass": "Aplicación para generar y administrar contraseñas seguras para tus distintos servicios.",
+      "vit": "Sitio web administrable de Venezolana de Industrias Tecnológicas para publicar controladores de sus equipos.",
+      "cook-recipes": "Buscador de recetas de cocina que consume la API de Edamam.",
+      "movinet": "Sitio web comercial para una empresa de servicios informáticos, implementado sobre el CRM Odoo."
+    }
+  },
+  "Networks": {
+    "meta": {
+      "title": "Servicios de redes e infraestructura en Falcón y toda Venezuela",
+      "description": "Instalación y configuración de redes LAN y Wi-Fi, routers, switches, servidores Linux y seguridad para hogares y empresas. Atención en Punto Fijo, todo el estado Falcón y el resto de Venezuela. Ex Jefe de Redes e instructor Cisco CCNA."
+    },
+    "hero": {
+      "eyebrow": "Redes e infraestructura",
+      "title": "Redes estables y seguras para tu hogar o empresa",
+      "subtitle": "Diseño, instalo y configuro tu red cableada e inalámbrica, tus equipos y tus servidores, para que todo funcione y lo puedas administrar sin dolores de cabeza.",
+      "cta": "Solicitar evaluación",
+      "credentials": {
+        "network-head": "Ex Jefe de Redes · VIT",
+        "ccna": "Instructor Cisco CCNA",
+        "it-years": "+20 años en TI",
+        "coverage": "Falcón y toda Venezuela"
+      },
+      "whatsapp": "Escríbeme por WhatsApp"
+    },
+    "diagram": {
+      "title": "Diagrama de una red: internet, router, switch y dispositivos",
+      "server": "Servidor",
+      "pc": "Equipos",
+      "wifi": "Wi-Fi",
+      "camera": "Cámaras"
+    },
+    "services": {
+      "title": "Servicios",
+      "subtitle": "Desde una oficina pequeña hasta la infraestructura de una empresa: me encargo de la red de punta a punta.",
+      "items": {
+        "cabling": {
+          "title": "Cableado estructurado",
+          "description": "Instalación y prueba de puntos de red, organización de racks y patch panels, y etiquetado para que la red sea fácil de mantener."
+        },
+        "wifi": {
+          "title": "Wi-Fi y cobertura",
+          "description": "Estudio de cobertura, ubicación de access points y redes separadas para invitados, para que la señal llegue estable a cada espacio."
+        },
+        "routing": {
+          "title": "Routers, switches y VLANs",
+          "description": "Configuración de routers y switches administrables, segmentación con VLANs, balanceo entre proveedores de internet y calidad de servicio."
+        },
+        "servers": {
+          "title": "Servidores Linux",
+          "description": "Instalación y administración de servidores para archivos, correo, sitios web, bases de datos y nube privada."
+        },
+        "security": {
+          "title": "Seguridad y respaldos",
+          "description": "Firewall, VPN para trabajo remoto, control de accesos y políticas de respaldo para proteger tu información."
+        },
+        "support": {
+          "title": "Soporte y mantenimiento",
+          "description": "Diagnóstico de fallas, monitoreo y mantenimiento preventivo para que tu red no se detenga."
+        }
+      },
+      "more": "¿Necesitas algo que no está en la lista? Hago mucho más en redes e infraestructura.",
+      "more-link": "Cuéntame tu caso"
+    },
+    "audience": {
+      "title": "Para quién",
+      "homes": {
+        "title": "Hogares",
+        "description": "Wi-Fi que llegue a toda la casa, configuración segura del router, cámaras y equipos conectados sin cortes."
+      },
+      "business": {
+        "title": "Empresas y comercios",
+        "description": "Redes de oficina y punto de venta, servidores, acceso remoto seguro y soporte para que tu equipo trabaje sin interrupciones."
+      }
+    },
+    "process": {
+      "title": "Proceso",
+      "steps": {
+        "diagnosis": {
+          "title": "Diagnóstico",
+          "description": "Reviso tu red actual, tus equipos y lo que necesitas."
+        },
+        "proposal": {
+          "title": "Propuesta",
+          "description": "Te presento la solución, los equipos recomendados y el presupuesto."
+        },
+        "install": {
+          "title": "Instalación",
+          "description": "Instalo, configuro y pruebo todo, y te dejo la red documentada."
+        },
+        "support": {
+          "title": "Soporte",
+          "description": "Te acompaño después de la entrega con mantenimiento y soporte."
+        }
+      }
+    },
+    "why": {
+      "title": "Experiencia",
+      "items": {
+        "vit": {
+          "title": "Experiencia real en infraestructura",
+          "description": "Como Jefe de Redes en Venezolana de Industrias Tecnológicas mantuve switches, routers y servidores, además de nube privada, correo institucional, bases de datos y alojamiento web."
+        },
+        "ccna": {
+          "title": "Formación Cisco CCNA",
+          "description": "Fui instructor Cisco CCNA: enseñé fundamentos de redes, enrutamiento, redes conmutadas, inalámbricas y tecnologías WAN."
+        },
+        "dev": {
+          "title": "Redes y software en un solo lugar",
+          "description": "Como desarrollador web full stack, también puedo crear el sitio, la intranet o la aplicación que corre sobre tu red."
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Tu red necesita una mano?",
+      "description": "Cuéntame qué está pasando o qué quieres montar y coordinamos una evaluación.",
+      "button": "Contáctame"
+    },
+    "whatsapp-message": "Hola Arnaldo, vi tu página de servicios de redes y quiero hacer una consulta.",
+    "coverage": {
+      "title": "Zona de atención",
+      "description": "Atiendo de forma presencial en Punto Fijo y en todo el estado Falcón. En el resto de Venezuela coordinamos la visita según el proyecto, y la configuración y el soporte de servidores y equipos también pueden hacerse de forma remota."
+    }
   },
   "Reviews": {
     "reviews-title": "Reseñas"
   },
   "Cta": {
-    "cta-description": "¿ Preparado para convertir tus ideas en realidad ? Estoy aquí para ayudarte.",
+    "cta-description": "¿Listo para convertir tus ideas en realidad? Estoy aquí para ayudarte.",
     "contact": "Contáctame"
   },
   "Contact": {
-    "say-hello": "Hola!",
-    "lest-work": "Vamos a trabajar juntos",
-    "contact-description": "Puedes contactarme con seguridad, recibirás una amable ateción"
+    "say-hello": "¡Hola!",
+    "lest-work": "Trabajemos juntos",
+    "contact-description": "Cuéntame sobre tu proyecto o tu red y te responderé lo antes posible.",
+    "whatsapp": "WhatsApp",
+    "whatsapp-message": "Hola Arnaldo, vi tu portafolio y quiero hacer una consulta."
   },
   "Form-contact": {
-    "name":"Tu nombre",
-    "email":"Tu correo electrónico",
-    "send-your-email":"Escribe tu correo",
-    "send":"Enviar"
+    "name": "Tu nombre",
+    "email": "Tu correo electrónico",
+    "send-your-email": "Escribe tu mensaje",
+    "send": "Enviar"
+  },
+  "Footer": {
+    "rights": "Todos los derechos reservados."
   }
 }

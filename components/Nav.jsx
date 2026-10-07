@@ -1,7 +1,6 @@
 // import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { Link } from '@/i18n/routing';
+import { Link, usePathname } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 
 
@@ -10,6 +9,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
     const links = [
         { path: '/', name: t('title1') },
         { path: '/projects', name: t('title2') },
+        { path: '/networks', name: t('title4') },
         { path: '/contact', name: t('title3') },
     ]
     const pathName = usePathname();

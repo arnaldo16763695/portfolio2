@@ -6,52 +6,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import ProjectCard from "@/components/ProjectCard";
+import { projectsData } from "@/app/lib/data";
 import { useTranslations } from "next-intl";
 
 const Work = () => {
-   const t = useTranslations('Works')
-   const projectData = [
-    {
-      image: "/work/4.png",
-      category: "react js",
-      name: "Sitio web de Movinet",
-      description: t('work-description1'),
-      link: "",
-      github: "",
-    },
-    {
-      image: "/work/3.png",
-      category: "react js",
-      name: "Sitio web de Colabry",
-      description:  t('work-description2'),
-      link: "",
-      github: "",
-    },
-    {
-      image: "/work/2.png",
-      category: "react js",
-      name: "Sitio web de Example",
-      description: t('work-description3'),        
-      link: "",
-      github: "",
-    },
-    {
-      image: "/work/1.png",
-      category: "react js",
-      name: "Sitio web de Exmaple 2",
-      description: t('work-description4'),       
-      link: "",
-      github: "",
-    },
-    {
-      image: "/work/1.png",
-      category: "react fullstack",
-      name: "Sitio web ejemplo",
-      description: t('work-description5'),       
-      link: "",
-      github: "",
-    },
-  ];
+  const t = useTranslations('Works')
   return (
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
@@ -63,12 +22,12 @@ const Work = () => {
           </p>
           <Link href="/projects">
             <Button>{t('all-projects')}</Button>
-          </Link> 
+          </Link>
         </div>
         {/* slider  */}
         <div className="xl:max-w-[1000px] xl:absolute pl-2 right-0 top-0 ">
           <Swiper
-            className="h-[480px]"
+            className="h-[600px]"
             slidesPerView={1}
             breakpoints={{
               640: {
@@ -80,9 +39,9 @@ const Work = () => {
             pagination={{ clickable: true }}
           >
             {/* show only the first 4 projects for the slides  */}
-            {projectData.slice(0, 4).map((project, index) => {
+            {projectsData.slice(0, 4).map((project) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={project.id}>
                   <ProjectCard project={project} />
                 </SwiperSlide>
               );

@@ -1,20 +1,54 @@
 import DevImg from '@/components/DevImg';
 import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { GraduationCap, Briefcase } from 'lucide-react';
-import {qualificationData, infoData, skillData} from '@/app/lib/data';
+import { GraduationCap, Briefcase, User2, PhoneCall, MailIcon, HomeIcon } from 'lucide-react';
+import { contactData, experienceData, educationData, skillData, toolsData } from '@/app/lib/data';
 import { useTranslations } from 'next-intl';
 
-
+// línea de tiempo usada en experiencia y educación
+const Timeline = ({ items }) => (
+    <div className='flex flex-col gap-y-8'>
+        {items.map(({ title, subtitle, year }, index) => (
+            <div className='flex gap-x-8 group' key={index}>
+                <div className='h-[84px] w-[1px] bg-border relative ml-2'>
+                    <div className='w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500'></div>
+                </div>
+                <div>
+                    <div className='font-semibold text-xl leading-none mb-2'>{title}</div>
+                    <div className='text-lg leading-none text-muted-foreground mb-4'>{subtitle}</div>
+                    <div className='text-base font-medium'>{year}</div>
+                </div>
+            </div>
+        ))}
+    </div>
+)
 
 const About = () => {
-    const getData = (arr, title) => {
-        return arr.find((item) => item.title === title);
-    }
     const t = useTranslations('About');
-    // console.log(getData(qualificationData, 'education')) 
+
+    const infoData = [
+        { icon: <User2 size={20} />, text: contactData.name },
+        { icon: <PhoneCall size={20} />, text: contactData.phone },
+        { icon: <MailIcon size={20} />, text: contactData.email },
+        { icon: <GraduationCap size={20} />, text: t('degrees.systems-engineer') },
+        { icon: <HomeIcon size={20} />, text: contactData.location },
+    ];
+
+    // un año sin fin (ej. "2022 –") significa que sigue vigente
+    const experience = experienceData.map(({ company, role, year }) => ({
+        title: company,
+        subtitle: t(`roles.${role}`),
+        year: year.endsWith('–') ? `${year} ${t('present')}` : year,
+    }));
+
+    const education = educationData.map(({ university, qualification, year }) => ({
+        title: university,
+        subtitle: t(`degrees.${qualification}`),
+        year,
+    }));
+
     return (
-        <section className='xl:h-[860px] pb-12 xl:py-24'>
+        <section className='pb-12 xl:py-24'>
             <div className='container mx-auto'>
                 <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>{t('about')}</h2>
                 <div className='flex flex-col xl:flex-row'>
@@ -33,7 +67,6 @@ const About = () => {
                             {/* tabs content */}
                             <div className='text-lg mt-12 xl:mt-8'>
                                 {/* personal */}
-
                                 <TabsContent value='personal'>
                                     <div className='pl-4 text-center xl:text-left'>
                                         <h3 className='h3 mb-4'>{t('information-title')}</h3>
@@ -65,110 +98,49 @@ const About = () => {
                                             <div className='flex flex-col gap-y-6'>
                                                 <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                                                     <Briefcase />
-                                                    <h4 className='capitalize font-medium'>
-                                                        {getData(qualificationData, 'experiencia').title}
-                                                    </h4>
+                                                    <h4 className='capitalize font-medium'>{t('experience')}</h4>
                                                 </div>
-                                                {/* list  */}
-                                                <div className='flex flex-col gap-y-8'>
-                                                    {getData(qualificationData, 'experiencia').data.map((item, index) => {
-                                                        const { company, role, year } = item;
-                                                        return (
-                                                            <div className='flex gap-x-8 group ' key={index}>
-                                                                <div className='h-[84px] w-[1px] bg-border relative ml-2'>
-                                                                    <div className='w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500'>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <div className='font-semibold textxl leading-none mb-2'>{company}</div>
-                                                                    <div className='text-lg leading-none text-muted-foreground mb-4'>{role}</div>
-                                                                    <div className='text-base font-medium'>{year}</div>
-                                                                </div>
-                                                            </div>
-                                                        )
-                                                    })}
-                                                </div>
+                                                <Timeline items={experience} />
                                             </div>
                                             {/* education  */}
                                             <div className='flex flex-col gap-y-6'>
                                                 <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                                                     <GraduationCap />
-                                                    <h4 className='capitalize font-medium'>
-                                                        {getData(qualificationData, 'educación').title}
-                                                    </h4>
+                                                    <h4 className='capitalize font-medium'>{t('education')}</h4>
                                                 </div>
-                                                {/* list  */}
-                                                <div className='flex flex-col gap-y-8'>
-                                                    {getData(qualificationData, 'educación').data.map((item, index) => {
-                                                        const { univerity, qualification, year } = item;
-                                                        return (
-                                                            <div className='flex gap-x-8 group ' key={index}>
-                                                                <div className='h-[84px] w-[1px] bg-border relative ml-2'>
-                                                                    <div className='w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500'>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <div className='font-semibold textxl leading-none mb-2'>{univerity}</div>
-                                                                    <div className='text-lg leading-none text-muted-foreground mb-4'>{qualification}</div>
-                                                                    <div className='text-base font-medium'>{year}</div>
-                                                                </div>
-                                                            </div>
-                                                        )
-                                                    })}
-                                                </div>
+                                                <Timeline items={education} />
                                             </div>
                                         </div>
-
                                     </div>
                                 </TabsContent>
 
                                 {/* skills */}
                                 <TabsContent value='skills'>
                                     <div className='text-center xl:text-left'>
-                                        <h3 className='h3 mb-8'>
-                                            {t('what-I-use')}
-                                        </h3>
-                                        {/* skills  */}
-
-                                        <div className='mb-16'>
-                                            <h4 className='text-xl font-semibold mb-2'>
-                                                {t('skills')}
-                                            </h4>
-                                            <div className='border-b border-border mb-4'>
-
-                                            </div>
-                                            {/* skill list  */}
-                                            <div>
-                                                {getData(skillData, 'skills').data.map((item, index) => {
-                                                    const { name } = item
-                                                    return (
-                                                        <div key={index} className='w-2/4 text-center xl:text-left mx-auto'>
-                                                            <div className='font-medium'>{name}</div>
-                                                        </div>
-                                                    )
-                                                })}
-                                            </div>
+                                        <h3 className='h3 mb-8'>{t('what-I-use')}</h3>
+                                        {/* skills por grupo  */}
+                                        <div className='flex flex-col gap-y-8 mb-12'>
+                                            {skillData.map(({ key, items }) => (
+                                                <div key={key}>
+                                                    <h4 className='text-xl font-semibold mb-2'>{t(`skill-groups.${key}`)}</h4>
+                                                    <div className='border-b border-border mb-4'></div>
+                                                    <ul className='flex flex-wrap gap-2 justify-center xl:justify-start'>
+                                                        {items.map((item) => (
+                                                            <li key={item} className='text-base font-medium px-3 py-1 rounded-md bg-tertiary dark:bg-secondary/40'>{item}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
                                         </div>
 
                                         {/* tools  */}
-                                        <div><h4 className='text-xl font-semibold mb-2 xl:text-left'>{t('tools')}</h4>
+                                        <div>
+                                            <h4 className='text-xl font-semibold mb-2 xl:text-left'>{t('tools')}</h4>
                                             <div className='border-b border-border mb-4'></div>
-                                            {/* tool list  */}
                                             <div className='flex gap-x-8 justify-center xl:justify-start'>
-                                                {
-                                                    getData(skillData, 'tools').data.map((item, index) => {
-                                                        const { imgPath } = item
-                                                        return (
-                                                            <div key={index}>
-                                                                <Image src={imgPath} width={48} height={48} alt='' priority />
-                                                            </div>
-                                                        )
-
-
-                                                    })
-                                                }
+                                                {toolsData.map(({ name, imgPath }) => (
+                                                    <Image key={name} src={imgPath} width={48} height={48} alt={name} />
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
