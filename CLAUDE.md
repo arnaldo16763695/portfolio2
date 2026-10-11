@@ -108,6 +108,7 @@ Fuente de verdad del contenido (sitio en producción + `public/Curriculum-Arnald
 | Globalsi App | Gestión de trabajos de campo | Next.js, Nest.js, Shadcn UI | https://global.ajedev.com |
 | Cook Recipes | Buscador de recetas con API Edamam | JavaScript vanilla | https://cook-recipes-rho.vercel.app |
 | E-commerce de comida | Pedidos con panel de admin y flujo de cocina en tiempo real | Next.js, TypeScript, Prisma, PostgreSQL | https://food.ajedev.com |
+| Atiende | SaaS de asistentes de IA para Instagram y WhatsApp (respuestas, citas, traspaso al equipo). Añadido después del relanzamiento, no está en el sitio antiguo | Next.js, Tailwind CSS, API de WhatsApp/Instagram | https://atiende.ajedev.com |
 
 **Redes**
 - LinkedIn: https://www.linkedin.com/in/arnaldo-espinoza-58915b56
