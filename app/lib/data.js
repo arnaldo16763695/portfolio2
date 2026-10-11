@@ -34,6 +34,16 @@ export const projectsData = [
     github: "",
   },
   {
+    id: "tucampo",
+    image: "/work/projects/tucampo.jpg",
+    category: "web-sites",
+    name: "Tucampo",
+    client: "Tucampo",
+    tech: ["WordPress", "WooCommerce"],
+    link: "https://tucampo.cl",
+    github: "",
+  },
+  {
     id: "food",
     image: "/work/projects/portfolio-9.jpg",
     category: "web-apps",
