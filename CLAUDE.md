@@ -103,7 +103,6 @@ Fuente de verdad del contenido (sitio en producción + `public/Curriculum-Arnald
 | Sitio web Movinet | Sitio comercial sobre CRM Odoo para empresa de servicios IT | Odoo | https://globalsi.cl |
 | Página web VIT | Sitio full stack administrable de drivers de equipos | Next.js | http://www.vit.gob.ve |
 | Aje Pass | Gestor y generador de contraseñas seguras | Next.js | https://pass-manager-kappa.vercel.app |
-| Portafolio desarrollador web | Plantilla de portafolio | Next.js, Tailwind CSS | https://portfolio2-sigma-eosin.vercel.app/es |
 | Vencol Technology | Sitio corporativo | Astro.js, Tailwind CSS | https://vencoltec.com |
 | Globalsi App | Gestión de trabajos de campo | Next.js, Nest.js, Shadcn UI | https://global.ajedev.com |
 | Cook Recipes | Buscador de recetas con API Edamam | JavaScript vanilla | https://cook-recipes-rho.vercel.app |

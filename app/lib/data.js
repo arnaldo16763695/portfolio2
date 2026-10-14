@@ -74,16 +74,6 @@ export const projectsData = [
     github: "",
   },
   {
-    id: "portfolio",
-    image: "/work/projects/portfolio-5.jpg",
-    category: "web-sites",
-    name: "Developer Portfolio",
-    client: null,
-    tech: ["Next.js", "Tailwind CSS"],
-    link: "https://portfolio2-sigma-eosin.vercel.app/es",
-    github: "",
-  },
-  {
     id: "aje-pass",
     image: "/work/projects/portfolio-4.jpg",
     category: "web-apps",
