@@ -54,6 +54,7 @@ export default async function LocaleLayout({ children, params }) {
 
       <body className={outfit.className}>
         <NextIntlClientProvider messages={messages}>
+        <Analytics/>
           <ThemeProvider attribute='class' defaultTheme='light'>
             <Header />
             {children}
