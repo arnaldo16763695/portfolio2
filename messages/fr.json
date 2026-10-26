@@ -48,6 +48,7 @@
     "roles": {
       "fullstack-dev": "Développeur web full stack",
       "network-head": "Responsable réseaux",
+      "it-consultant": "Consultant en technologies de l'information",
       "ccna-instructor": "Formateur Cisco CCNA",
       "alc-assistant": "Assistant administration, logistique et contrôle"
     },
@@ -97,7 +98,7 @@
   "Networks": {
     "meta": {
       "title": "Services réseaux et infrastructure au Venezuela",
-      "description": "Installation et configuration de réseaux LAN et Wi-Fi, routeurs, switchs, serveurs Linux et sécurité pour particuliers et entreprises. Interventions à Punto Fijo, dans tout l'État de Falcón et dans le reste du Venezuela. Ancien responsable réseaux et formateur Cisco CCNA."
+      "description": "Installation et configuration de réseaux LAN et Wi-Fi, routeurs, switchs, serveurs Linux et sécurité pour particuliers et entreprises. Interventions à Punto Fijo, dans tout l'État de Falcón et dans le reste du Venezuela. Responsable réseaux chez VIT et ancien formateur Cisco CCNA."
     },
     "hero": {
       "eyebrow": "Réseaux et infrastructure",
@@ -105,7 +106,7 @@
       "subtitle": "Je conçois, installe et configure votre réseau filaire et sans fil, vos équipements et vos serveurs, pour que tout fonctionne et reste simple à gérer.",
       "cta": "Demander une évaluation",
       "credentials": {
-        "network-head": "Ancien responsable réseaux · VIT",
+        "network-head": "Responsable réseaux · VIT",
         "ccna": "Formateur Cisco CCNA",
         "it-years": "+20 ans dans l'informatique",
         "coverage": "Falcón et tout le Venezuela"
@@ -188,7 +189,7 @@
       "items": {
         "vit": {
           "title": "Une vraie expérience en infrastructure",
-          "description": "En tant que responsable réseaux chez Venezolana de Industrias Tecnológicas, j'ai maintenu switchs, routeurs et serveurs, ainsi que le cloud privé, la messagerie, les bases de données et l'hébergement web."
+          "description": "En tant que responsable réseaux chez Venezolana de Industrias Tecnológicas, je maintiens switchs, routeurs et serveurs, ainsi que le cloud privé, la messagerie, les bases de données et l'hébergement web."
         },
         "ccna": {
           "title": "Formation Cisco CCNA",

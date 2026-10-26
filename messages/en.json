@@ -48,6 +48,7 @@
     "roles": {
       "fullstack-dev": "Full stack web developer",
       "network-head": "Head of Networks",
+      "it-consultant": "IT Consultant",
       "ccna-instructor": "Cisco CCNA Instructor",
       "alc-assistant": "Administration, Logistics & Control Assistant"
     },
@@ -97,7 +98,7 @@
   "Networks": {
     "meta": {
       "title": "Network and infrastructure services in Venezuela",
-      "description": "Installation and configuration of LAN and Wi-Fi networks, routers, switches, Linux servers and security for homes and businesses. On-site service in Punto Fijo, Falcón state and across Venezuela. Former Head of Networks and Cisco CCNA instructor."
+      "description": "Installation and configuration of LAN and Wi-Fi networks, routers, switches, Linux servers and security for homes and businesses. On-site service in Punto Fijo, Falcón state and across Venezuela. Head of Networks at VIT and former Cisco CCNA instructor."
     },
     "hero": {
       "eyebrow": "Networks & infrastructure",
@@ -105,7 +106,7 @@
       "subtitle": "I design, install and configure your wired and wireless network, your devices and your servers, so everything works and is easy to manage.",
       "cta": "Request an assessment",
       "credentials": {
-        "network-head": "Former Head of Networks · VIT",
+        "network-head": "Head of Networks · VIT",
         "ccna": "Cisco CCNA Instructor",
         "it-years": "20+ years in IT",
         "coverage": "Falcón & all of Venezuela"
@@ -188,7 +189,7 @@
       "items": {
         "vit": {
           "title": "Hands-on infrastructure experience",
-          "description": "As Head of Networks at Venezolana de Industrias Tecnológicas I maintained switches, routers and servers, plus private cloud, corporate email, databases and web hosting."
+          "description": "As Head of Networks at Venezolana de Industrias Tecnológicas I maintain switches, routers and servers, plus private cloud, corporate email, databases and web hosting."
         },
         "ccna": {
           "title": "Cisco CCNA background",

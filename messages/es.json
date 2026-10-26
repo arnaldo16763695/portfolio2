@@ -48,6 +48,7 @@
     "roles": {
       "fullstack-dev": "Desarrollador web full stack",
       "network-head": "Jefe de Redes",
+      "it-consultant": "Consultor tecnológico",
       "ccna-instructor": "Instructor Cisco CCNA",
       "alc-assistant": "Asistente de Administración, Logística y Control"
     },
@@ -97,7 +98,7 @@
   "Networks": {
     "meta": {
       "title": "Servicios de redes e infraestructura en Falcón y toda Venezuela",
-      "description": "Instalación y configuración de redes LAN y Wi-Fi, routers, switches, servidores Linux y seguridad para hogares y empresas. Atención en Punto Fijo, todo el estado Falcón y el resto de Venezuela. Ex Jefe de Redes e instructor Cisco CCNA."
+      "description": "Instalación y configuración de redes LAN y Wi-Fi, routers, switches, servidores Linux y seguridad para hogares y empresas. Atención en Punto Fijo, todo el estado Falcón y el resto de Venezuela. Jefe de Redes en VIT y ex instructor Cisco CCNA."
     },
     "hero": {
       "eyebrow": "Redes e infraestructura",
@@ -105,7 +106,7 @@
       "subtitle": "Diseño, instalo y configuro tu red cableada e inalámbrica, tus equipos y tus servidores, para que todo funcione y lo puedas administrar sin dolores de cabeza.",
       "cta": "Solicitar evaluación",
       "credentials": {
-        "network-head": "Ex Jefe de Redes · VIT",
+        "network-head": "Jefe de Redes · VIT",
         "ccna": "Instructor Cisco CCNA",
         "it-years": "+20 años en TI",
         "coverage": "Falcón y toda Venezuela"
@@ -188,7 +189,7 @@
       "items": {
         "vit": {
           "title": "Experiencia real en infraestructura",
-          "description": "Como Jefe de Redes en Venezolana de Industrias Tecnológicas mantuve switches, routers y servidores, además de nube privada, correo institucional, bases de datos y alojamiento web."
+          "description": "Como Jefe de Redes en Venezolana de Industrias Tecnológicas mantengo switches, routers y servidores, además de nube privada, correo institucional, bases de datos y alojamiento web."
         },
         "ccna": {
           "title": "Formación Cisco CCNA",

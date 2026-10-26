@@ -72,17 +72,18 @@ Fuente de verdad del contenido (sitio en producción + `public/cv/Arnaldo-Espino
 - Nombre: Arnaldo Espinoza — Programador Web / Desarrollador Full Stack
 - Firma personal (razón social): **ARNALDO JESUS ESPINOZA, F.P** (sin punto final; `contactData.legalName`) · RIF: V167636957 (`contactData.rif`). Aparece en el pie de página de todas las páginas porque ajedev.com es la web del negocio declarada ante Meta (proveedor de la API de WhatsApp/Meta). No cambiar su escritura sin confirmar con el registro.
 - Ubicación: Punto Fijo, Edo. Falcón, Venezuela
-- Teléfono: +58 0414 4786040 · Email: arnaldoespinoza1@hotmail.com
+- Teléfono: +58 0414 4786040 · Email: arnaldoespinoza1@hotmail.com (decisión del usuario 2026-10-26: el sitio mantiene el de Hotmail y el CV debe usar el mismo)
 - Formación (según CV): Ingeniero de Sistemas, I.U.P. Santiago Mariño (2012–2016); TSU en Sistemas de Información, I.U. Carlos Soublette (2005–2008)
 - Idiomas: español nativo, inglés intermedio
-- CV: un PDF por idioma en `public/cv/` (`Arnaldo-Espinoza-CV-<idioma>.pdf`), registrado en `cvFiles` de `app/lib/data.js`. El botón del Hero descarga el del idioma de la página (si no existe, el de `CV_FALLBACK`: inglés y luego español) y debajo ofrece los demás. La URL antigua `/Curriculum-Arnaldo.pdf` redirige al CV en español (`next.config.mjs`). Hoy solo existe el CV en español y está desactualizado (dice "Desarrollador Frontend" y usa el email de Gmail); falta la versión en inglés
+- CV: un PDF por idioma en `public/cv/` (`Arnaldo-Espinoza-CV-<idioma>.pdf`), registrado en `cvFiles` de `app/lib/data.js`. El botón del Hero descarga el del idioma de la página (si no existe, el de `CV_FALLBACK`: inglés y luego español) y debajo ofrece los demás. La URL antigua `/Curriculum-Arnaldo.pdf` redirige al CV en español (`next.config.mjs`). Existen en español e inglés (actualizados el 2026-10-26; originales en `E:ARNALDO CVCV_VECV_ES.pdf` y `E:ARNALDO CVgeneral_english.pdf`, editados desde sus `.pptx`). Francés usa el inglés
 
 **Bio (texto original en producción)**
 > Desde mis inicios en el ámbito laboral, me he desempeñado en soporte técnico, administración de redes y servidores, con experiencia en configuración de servidores Linux, routers y switches. Actualmente, me enfoco en el desarrollo web fullStack. Como Frontend, manejo HTML5, CSS3 con Tailwind CSS, TypeScript, JavaScript y su librería React con el framework Next.js. En Backend, trabajo con Node.js y Nest.js, además de bases de datos como MySQL y PostgreSQL. Constantemente aprendo nuevas herramientas y librerías para mejorar mis habilidades. Soy un apasionado por la tecnología, disfruto trabajar en equipo y estoy siempre abierto a aprender.
 
 **Experiencia**
 - Freelance (ajedev) — Desarrollador web full stack (2022 – actualidad; en el CV: dedicado al desarrollo web desde mediados de 2022)
-- VIT (Venezolana de Industrias Tecnológicas) — Jefe de Redes (2018–2024)
+- Globalsi SPA (Chile) — Consultor tecnológico: consultoría TI, redes y servidores, y desarrollo de aplicaciones web a medida (2019 – actualidad)
+- VIT (Venezolana de Industrias Tecnológicas) — Jefe de Redes (2018 – actualidad; confirmado por el usuario el 2026-10-26)
 - Emprevet S.A. — Instructor Cisco CCNA (2013–2015, según CV)
 - Makro Comercializadora S.A. — Asistente de Administración, Logística y Control, incluía soporte técnico (2005–2016)
 - ID For Idea — Desarrollador Web Frontend (aparece en el CV sin fechas; no se muestra en el sitio)

@@ -24,7 +24,7 @@ export const whatsappLink = (message) =>
 // CV en PDF por idioma (public/cv/). Los idiomas sin PDF propio usan el de CV_FALLBACK
 export const cvFiles = {
   es: "/cv/Arnaldo-Espinoza-CV-es.pdf",
-  // en: "/cv/Arnaldo-Espinoza-CV-en.pdf",
+  en: "/cv/Arnaldo-Espinoza-CV-en.pdf",
 };
 const CV_FALLBACK = ["en", "es"];
 
@@ -162,9 +162,14 @@ export const experienceData = [
     year: `${WEB_DEV_START_YEAR} –`,
   },
   {
+    company: "Globalsi SPA (Chile)",
+    role: "it-consultant",
+    year: "2019 –",
+  },
+  {
     company: "VIT (Venezolana de Industrias Tecnológicas)",
     role: "network-head",
-    year: "2018 – 2024",
+    year: "2018 –",
   },
   {
     company: "Emprevet S.A.",
