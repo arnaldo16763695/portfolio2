@@ -66,7 +66,7 @@ public/                     # imágenes: hero/, about/, work/, reviews/, contact
 
 ## Contenido de referencia (producción, ajedev.com)
 
-Fuente de verdad del contenido (sitio en producción + `public/Curriculum-Arnaldo.pdf`). Ya está migrado a `app/lib/data.js` y `messages/`; se conserva aquí como referencia.
+Fuente de verdad del contenido (sitio en producción + `public/cv/Arnaldo-Espinoza-CV-es.pdf`). Ya está migrado a `app/lib/data.js` y `messages/`; se conserva aquí como referencia.
 
 **Perfil**
 - Nombre: Arnaldo Espinoza — Programador Web / Desarrollador Full Stack
@@ -75,7 +75,7 @@ Fuente de verdad del contenido (sitio en producción + `public/Curriculum-Arnald
 - Teléfono: +58 0414 4786040 · Email: arnaldoespinoza1@hotmail.com
 - Formación (según CV): Ingeniero de Sistemas, I.U.P. Santiago Mariño (2012–2016); TSU en Sistemas de Información, I.U. Carlos Soublette (2005–2008)
 - Idiomas: español nativo, inglés intermedio
-- CV: `public/Curriculum-Arnaldo.pdf` (descargable desde el Hero)
+- CV: un PDF por idioma en `public/cv/` (`Arnaldo-Espinoza-CV-<idioma>.pdf`), registrado en `cvFiles` de `app/lib/data.js`. El botón del Hero descarga el del idioma de la página (si no existe, el de `CV_FALLBACK`: inglés y luego español) y debajo ofrece los demás. La URL antigua `/Curriculum-Arnaldo.pdf` redirige al CV en español (`next.config.mjs`). Hoy solo existe el CV en español y está desactualizado (dice "Desarrollador Frontend" y usa el email de Gmail); falta la versión en inglés
 
 **Bio (texto original en producción)**
 > Desde mis inicios en el ámbito laboral, me he desempeñado en soporte técnico, administración de redes y servidores, con experiencia en configuración de servidores Linux, routers y switches. Actualmente, me enfoco en el desarrollo web fullStack. Como Frontend, manejo HTML5, CSS3 con Tailwind CSS, TypeScript, JavaScript y su librería React con el framework Next.js. En Backend, trabajo con Node.js y Nest.js, además de bases de datos como MySQL y PostgreSQL. Constantemente aprendo nuevas herramientas y librerías para mejorar mis habilidades. Soy un apasionado por la tecnología, disfruto trabajar en equipo y estoy siempre abierto a aprender.

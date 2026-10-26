@@ -15,6 +15,12 @@
     "brief-description": "Je crée des sites et des applications web avec Next.js, Nest.js et PostgreSQL, fort de plus de 20 ans d'expérience en support technique, réseaux et serveurs.",
     "contact-me": "Contactez-moi",
     "download-cv": "Télécharger le CV",
+    "cv-also-available": "Également disponible en",
+    "cv-languages": {
+      "es": "Español",
+      "en": "English",
+      "fr": "Français"
+    },
     "experience": "Années en développement web",
     "projects-finished": "Projets publiés",
     "customers": "Clients"

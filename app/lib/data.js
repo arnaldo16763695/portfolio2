@@ -21,6 +21,27 @@ export const contactData = {
 export const whatsappLink = (message) =>
   `https://wa.me/${contactData.whatsapp}${message ? `?text=${encodeURIComponent(message)}` : ""}`;
 
+// CV en PDF por idioma (public/cv/). Los idiomas sin PDF propio usan el de CV_FALLBACK
+export const cvFiles = {
+  es: "/cv/Arnaldo-Espinoza-CV-es.pdf",
+  // en: "/cv/Arnaldo-Espinoza-CV-en.pdf",
+};
+const CV_FALLBACK = ["en", "es"];
+
+// CV que corresponde al idioma de la página
+export const getCv = (locale) => {
+  const lang = cvFiles[locale] ? locale : CV_FALLBACK.find((l) => cvFiles[l]);
+  return { lang, file: cvFiles[lang] };
+};
+
+// CVs en los demás idiomas, para ofrecerlos como alternativa
+export const getOtherCvs = (locale) => {
+  const { lang } = getCv(locale);
+  return Object.entries(cvFiles)
+    .filter(([l]) => l !== lang)
+    .map(([l, file]) => ({ lang: l, file }));
+};
+
 // categorías: clave de traducción en Projects.categories
 export const projectsData = [
   {

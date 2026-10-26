@@ -10,12 +10,15 @@ import {
 import DevImg from '@/components/DevImg';
 import Badge from '@/components/Badge';
 import Socials from '@/components/Socials';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import { projectsData, clientsCount, WEB_DEV_START_YEAR } from '@/app/lib/data';
+import { projectsData, clientsCount, WEB_DEV_START_YEAR, getCv, getOtherCvs } from '@/app/lib/data';
 
 const Hero = () => {
   const t = useTranslations('Hero');
+  const locale = useLocale();
+  const cv = getCv(locale);
+  const otherCvs = getOtherCvs(locale);
   return (
     <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className='container mx-auto'>
@@ -27,9 +30,23 @@ const Hero = () => {
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">{t('brief-description')}</p>
 
             {/* button  */}
-            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12 ">
-              <Link href='/contact'><Button className="gap-x-2 " >{t('contact-me')}<Send size={18} /></Button></Link>
-              <a href='/Curriculum-Arnaldo.pdf' download><Button className="gap-x-2" variant='secondary' >{t('download-cv')}<Download size={18} /></Button></a>
+            <div className="mx-auto xl:mx-0 mb-12">
+              <div className="flex flex-col gap-y-3 md:flex-row gap-x-3">
+                <Link href='/contact'><Button className="gap-x-2 " >{t('contact-me')}<Send size={18} /></Button></Link>
+                <a href={cv.file} hrefLang={cv.lang} download><Button className="gap-x-2" variant='secondary' >{t('download-cv')}<Download size={18} /></Button></a>
+              </div>
+              {/* CV en otros idiomas */}
+              {otherCvs.length > 0 && (
+                <p className="mt-3 text-sm text-muted-foreground">
+                  {t('cv-also-available')}{' '}
+                  {otherCvs.map(({ lang, file }, i) => (
+                    <span key={lang}>
+                      {i > 0 && ' · '}
+                      <a href={file} hrefLang={lang} download className="underline underline-offset-4 hover:text-primary transition-all">{t(`cv-languages.${lang}`)}</a>
+                    </span>
+                  ))}
+                </p>
+              )}
             </div>
 
             {/* socials media */}
