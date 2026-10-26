@@ -107,6 +107,7 @@ Fuente de verdad del contenido (sitio en producción + `public/Curriculum-Arnald
 | Globalsi App | Gestión de trabajos de campo | Next.js, Nest.js, Shadcn UI | https://global.ajedev.com |
 | Cook Recipes | Buscador de recetas con API Edamam | JavaScript vanilla | https://cook-recipes-rho.vercel.app |
 | E-commerce de comida | Pedidos con panel de admin y flujo de cocina en tiempo real | Next.js, TypeScript, Prisma, PostgreSQL | https://food.ajedev.com |
+| VZ Food | SaaS multi-tenant de comida rápida (marketplace multimarca, storefront por sucursal, admin, cocina). Proyecto distinto de food.ajedev.com. Añadido después del relanzamiento | Next.js, Tailwind CSS, Supabase (PostgreSQL) | https://vzfood.ajedev.com |
 | Tucampo | Sitio con catálogo de maquinaria agrícola y repuestos (Chile). Añadido después del relanzamiento | WordPress, WooCommerce | https://tucampo.cl |
 | Atiende | SaaS de asistentes de IA para Instagram y WhatsApp (respuestas, citas, traspaso al equipo). Añadido después del relanzamiento, no está en el sitio antiguo | Next.js, Tailwind CSS, API de WhatsApp/Instagram | https://atiende.ajedev.com |
 

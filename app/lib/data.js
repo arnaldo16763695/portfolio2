@@ -24,6 +24,16 @@ export const whatsappLink = (message) =>
 // categorías: clave de traducción en Projects.categories
 export const projectsData = [
   {
+    id: "vzfood",
+    image: "/work/projects/vzfood.jpg",
+    category: "web-apps",
+    name: "VZ Food",
+    client: null,
+    tech: ["Next.js", "Tailwind CSS", "Supabase", "PostgreSQL"],
+    link: "https://vzfood.ajedev.com",
+    github: "",
+  },
+  {
     id: "atiende",
     image: "/work/projects/atiende.png",
     category: "web-apps",
