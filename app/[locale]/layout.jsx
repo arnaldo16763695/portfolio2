@@ -61,6 +61,7 @@ export default async function LocaleLayout({ children, params }) {
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
+        <script src="https://atiende.ajedev.com/widget.js" data-widget-key="wk_nzV6uOi-ycNwUME3xpXJRXit" async></script>
       </body>
 
     </html>
