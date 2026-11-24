@@ -10,7 +10,7 @@
     "title4": "networks"
   },
   "Hero": {
-    "web-developer": "Full stack web developer · Network administrator",
+    "web-developer": "Full stack web developer · Network administrator · AI Automation",
     "hello": "Hi, I'm",
     "brief-description": "I build websites and web applications with Next.js, Nest.js and PostgreSQL, backed by more than 20 years of experience in technical support, networking and servers.",
     "contact-me": "Contact me",
@@ -31,7 +31,7 @@
     "qualifications": "Background",
     "skills": "Skills",
     "information-title": "From networks and servers to full stack development",
-    "information-description": "I started out in technical support and network and server administration, configuring Linux servers, routers and switches. Today I focus on full stack web development: React and Next.js with TypeScript and Tailwind CSS on the frontend; Node.js, Nest.js, MySQL and PostgreSQL on the backend. I'm passionate about technology, enjoy teamwork and I'm always learning.",
+    "information-description": "I started out in technical support and network and server administration, configuring Linux servers, routers and switches. Today I focus on full stack web development: React and Next.js with TypeScript and Tailwind CSS on the frontend; Node.js, Nest.js, MySQL and PostgreSQL on the backend. I'm passionate about technology, enjoy teamwork and I'm always learning. I also automate processes with AI: I built Atiende, a platform of assistants that serve customers over WhatsApp, Instagram and the web, using language models with RAG over each business's own information.",
     "languages-title": "Languages",
     "languages": "Native Spanish, intermediate English",
     "my-path": "My Journey",
@@ -43,7 +43,8 @@
     "skill-groups": {
       "frontend": "Frontend",
       "backend": "Backend & databases",
-      "infra": "DevOps & networking"
+      "infra": "DevOps & networking",
+      "ai": "Automation & AI"
     },
     "roles": {
       "fullstack-dev": "Full stack web developer",
@@ -67,7 +68,10 @@
     "seo-description": "Search engine optimization: structure, metadata, performance and content to improve your organic ranking on Google.",
     "networks": "Networks & Infrastructure",
     "networks-description": "Design, installation and configuration of LAN/Wi-Fi networks, routers, switches and Linux servers for homes and businesses, backed by experience as Head of Networks and CCNA instructor.",
-    "networks-more": "See network services"
+    "networks-more": "See network services",
+    "ai-automation": "AI Automation",
+    "ai-automation-description": "AI assistants that handle WhatsApp, Instagram and your website chat: they answer with your business information, book appointments and hand the conversation to your team when needed. I build them with Atiende, my own platform.",
+    "ai-automation-more": "Discover Atiende"
   },
   "Works": {
     "all-projects": "All projects",

@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { GanttChartSquare, Blocks, Search, Network, ArrowRight } from "lucide-react";
+import { GanttChartSquare, Blocks, Search, Network, Bot, ArrowRight, ExternalLink } from "lucide-react";
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
@@ -29,6 +29,14 @@ const Services = () => {
             href: '/networks',
             linkText: t('networks-more'),
         },
+        {
+            icon: <Bot size={72} strokeWidth={0.8} />,
+            title: t('ai-automation'),
+            description: t('ai-automation-description'),
+            // enlace externo a la plataforma propia
+            externalHref: 'https://atiende.ajedev.com',
+            linkText: t('ai-automation-more'),
+        },
     ];
     return (
         <section className='mb-12 xl:mb-36'>
@@ -39,7 +47,8 @@ const Services = () => {
                     {
                         servicesData.map((item, index) => {
                             return (
-                                <Card key={index} className='w-full max-w-[525px] min-h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative'>
+                                // la última tarjeta queda sola: ocupa las dos columnas y se centra
+                                <Card key={index} className='w-full max-w-[525px] min-h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative md:last:odd:col-span-2'>
                                     <CardHeader className='text-primary absolute -top-[60px]'>
                                         <div className='w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center'>{item.icon}</div>
                                     </CardHeader>
@@ -50,6 +59,11 @@ const Services = () => {
                                             <Link href={item.href} className='inline-flex items-center gap-x-2 mt-4 text-primary font-medium hover:underline'>
                                                 {item.linkText}<ArrowRight size={18} />
                                             </Link>
+                                        )}
+                                        {item.externalHref && (
+                                            <a href={item.externalHref} target='_blank' rel='noopener noreferrer' className='inline-flex items-center gap-x-2 mt-4 text-primary font-medium hover:underline'>
+                                                {item.linkText}<ExternalLink size={18} />
+                                            </a>
                                         )}
                                     </CardContent>
                                 </Card>

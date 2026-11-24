@@ -202,6 +202,7 @@ export const skillData = [
   { key: "frontend", items: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "TypeScript", "React", "Next.js", "Astro", "Shadcn UI", "Zustand"] },
   { key: "backend", items: ["Node.js", "Nest.js", "Prisma", "Supabase", "MySQL", "PostgreSQL"] },
   { key: "infra", items: ["Linux", "Docker", "Nginx", "Git", "Cisco CCNA", "Routing & Switching"] },
+  { key: "ai", items: ["OpenAI API", "DeepSeek API", "RAG", "Embeddings", "WhatsApp API", "Instagram API", "BullMQ", "Redis"] },
 ];
 
 export const toolsData = [

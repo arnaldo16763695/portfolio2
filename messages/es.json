@@ -10,7 +10,7 @@
     "title4": "redes"
   },
   "Hero": {
-    "web-developer": "Desarrollador web full stack · Administrador de redes",
+    "web-developer": "Desarrollador web full stack · Administrador de redes · Automatización con IA",
     "hello": "Hola, soy",
     "brief-description": "Construyo sitios y aplicaciones web con Next.js, Nest.js y PostgreSQL, respaldado por más de 20 años de experiencia en soporte técnico, redes y servidores.",
     "contact-me": "Contáctame",
@@ -31,7 +31,7 @@
     "qualifications": "Trayectoria",
     "skills": "Habilidades",
     "information-title": "De las redes y servidores al desarrollo full stack",
-    "information-description": "Empecé en soporte técnico y administración de redes y servidores, configurando servidores Linux, routers y switches. Hoy me enfoco en el desarrollo web full stack: React y Next.js con TypeScript y Tailwind CSS en el frontend; Node.js, Nest.js, MySQL y PostgreSQL en el backend. Me apasiona la tecnología, disfruto trabajar en equipo y siempre estoy aprendiendo.",
+    "information-description": "Empecé en soporte técnico y administración de redes y servidores, configurando servidores Linux, routers y switches. Hoy me enfoco en el desarrollo web full stack: React y Next.js con TypeScript y Tailwind CSS en el frontend; Node.js, Nest.js, MySQL y PostgreSQL en el backend. Me apasiona la tecnología, disfruto trabajar en equipo y siempre estoy aprendiendo. Además, automatizo procesos con IA: construí Atiende, una plataforma de asistentes que atienden clientes por WhatsApp, Instagram y la web, usando modelos de lenguaje con RAG sobre la información de cada negocio.",
     "languages-title": "Idiomas",
     "languages": "Español nativo, inglés intermedio",
     "my-path": "Mi trayectoria",
@@ -43,7 +43,8 @@
     "skill-groups": {
       "frontend": "Frontend",
       "backend": "Backend y bases de datos",
-      "infra": "DevOps y redes"
+      "infra": "DevOps y redes",
+      "ai": "Automatización e IA"
     },
     "roles": {
       "fullstack-dev": "Desarrollador web full stack",
@@ -67,7 +68,10 @@
     "seo-description": "Optimización para buscadores: estructura, metadatos, rendimiento y contenido para mejorar tu posicionamiento orgánico en Google.",
     "networks": "Redes e infraestructura",
     "networks-description": "Diseño, instalación y configuración de redes LAN/Wi-Fi, routers, switches y servidores Linux para hogares y empresas, con experiencia como Jefe de Redes e instructor CCNA.",
-    "networks-more": "Ver servicios de redes"
+    "networks-more": "Ver servicios de redes",
+    "ai-automation": "Automatización con IA",
+    "ai-automation-description": "Asistentes de IA que atienden WhatsApp, Instagram y el chat de tu web: responden con la información de tu negocio, agendan citas y pasan la conversación a tu equipo cuando hace falta. Lo hago con Atiende, mi propia plataforma.",
+    "ai-automation-more": "Conocer Atiende"
   },
   "Works": {
     "all-projects": "Todos los proyectos",

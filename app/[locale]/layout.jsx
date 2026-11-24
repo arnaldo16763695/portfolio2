@@ -7,6 +7,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script";
 //theme provider
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -61,7 +62,8 @@ export default async function LocaleLayout({ children, params }) {
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
-        <script src="https://atiende.ajedev.com/widget.js" data-widget-key="wk_nzV6uOi-ycNwUME3xpXJRXit" async></script>
+        {/* Chat de Atiende: se carga cuando la página ya terminó de cargar */}
+        <Script src="https://atiende.ajedev.com/widget.js" data-widget-key="wk_nzV6uOi-ycNwUME3xpXJRXit" strategy="lazyOnload" />
       </body>
 
     </html>

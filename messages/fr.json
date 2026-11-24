@@ -10,7 +10,7 @@
     "title4": "réseaux"
   },
   "Hero": {
-    "web-developer": "Développeur web full stack · Administrateur réseaux",
+    "web-developer": "Développeur web full stack · Administrateur réseaux · Automatisation IA",
     "hello": "Bonjour, je suis",
     "brief-description": "Je crée des sites et des applications web avec Next.js, Nest.js et PostgreSQL, fort de plus de 20 ans d'expérience en support technique, réseaux et serveurs.",
     "contact-me": "Contactez-moi",
@@ -31,7 +31,7 @@
     "qualifications": "Parcours",
     "skills": "Compétences",
     "information-title": "Des réseaux et serveurs au développement full stack",
-    "information-description": "J'ai commencé dans le support technique et l'administration de réseaux et de serveurs, en configurant des serveurs Linux, des routeurs et des switchs. Aujourd'hui, je me consacre au développement web full stack : React et Next.js avec TypeScript et Tailwind CSS côté frontend ; Node.js, Nest.js, MySQL et PostgreSQL côté backend. Passionné de technologie, j'aime le travail d'équipe et j'apprends en permanence.",
+    "information-description": "J'ai commencé dans le support technique et l'administration de réseaux et de serveurs, en configurant des serveurs Linux, des routeurs et des switchs. Aujourd'hui, je me consacre au développement web full stack : React et Next.js avec TypeScript et Tailwind CSS côté frontend ; Node.js, Nest.js, MySQL et PostgreSQL côté backend. Passionné de technologie, j'aime le travail d'équipe et j'apprends en permanence. J'automatise aussi des processus avec l'IA : j'ai créé Atiende, une plateforme d'assistants qui servent les clients sur WhatsApp, Instagram et le web, grâce à des modèles de langage avec RAG sur les informations de chaque entreprise.",
     "languages-title": "Langues",
     "languages": "Espagnol natif, anglais intermédiaire",
     "my-path": "Mon parcours",
@@ -43,7 +43,8 @@
     "skill-groups": {
       "frontend": "Frontend",
       "backend": "Backend et bases de données",
-      "infra": "DevOps et réseaux"
+      "infra": "DevOps et réseaux",
+      "ai": "Automatisation et IA"
     },
     "roles": {
       "fullstack-dev": "Développeur web full stack",
@@ -67,7 +68,10 @@
     "seo-description": "Optimisation pour les moteurs de recherche : structure, métadonnées, performance et contenu pour améliorer votre référencement naturel sur Google.",
     "networks": "Réseaux et Infrastructure",
     "networks-description": "Conception, installation et configuration de réseaux LAN/Wi-Fi, routeurs, switchs et serveurs Linux pour particuliers et entreprises, avec une expérience de responsable réseaux et de formateur CCNA.",
-    "networks-more": "Voir les services réseaux"
+    "networks-more": "Voir les services réseaux",
+    "ai-automation": "Automatisation avec l'IA",
+    "ai-automation-description": "Des assistants IA qui gèrent WhatsApp, Instagram et le chat de votre site : ils répondent avec les informations de votre entreprise, prennent des rendez-vous et transmettent la conversation à votre équipe si nécessaire. Je les crée avec Atiende, ma propre plateforme.",
+    "ai-automation-more": "Découvrir Atiende"
   },
   "Works": {
     "all-projects": "Tous les projets",
